@@ -1,29 +1,52 @@
 import Text.Printf
+--import System.Random
+
+-- Define o valor máximo de cores
 maxRGB :: Int
 maxRGB = 255
 
-type Rect = (Int, Int, Int, Int) -- x, y, width, height
+-- cx, cy, r
+type Circ = (Int, Int, Int, String)
 
-svgRect :: Rect -> String -> String
-svgRect (x, y, w, h) style = 
-      printf "<rect x=50 y=50 width= 50 height=100 style='%s' />\n" x y w h style
 
+-- Strings SVG
+svgCirc :: Circ -> String -> String
+svgCirc (cx, cy, r) style = 
+  printf "<circle cx='%d' cy='%d' r='%d' s='silver' fill='white'/>" cx cy r s style
+
+-- String inicial SVG
+--svgBegin :: Float -> Float -> String
 svgBegin :: Int -> Int -> String
 svgBegin w h = 
-  printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h 
+  printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h
 
+-- String final SVG
 svgEnd :: String
 svgEnd = "</svg>"
 
-svgStyle :: (Int,Int,Int) -> String
-svgStyle (r,g,b) = printf "fill:rgb(%d,%d,%d); mix-blend-mode: screen;" r g b
+--svgStyle :: (String, Int, String) -> String
+--svg
 
+-- Paleta formada por apenas 3 cores (Red, Green, Blue) que se repetem ciclicamente
+rgbOnlyPalette :: Int -> [(Int,Int,Int)]
+rgbOnlyPalette n = take n $ cycle [(maxRGB,0,0), (0,maxRGB,0), (0,0,maxRGB)]
 
+--------------------------------------------------------------------------
+-- Função principal que gera arquivo com imagem SVG
+--------------------------------------------------------------------------
 main :: IO ()
 main = do
-  putStrLn "Check output in output.svg"
+    putStrLn "Check output in output.svg"
 
-svgstrings = svgBegin w h ++ svgRect ++ svgEnd in writeFile "output.svg" svgstrings
-
+--let ncircles = 3
+--    gap = 5  
+--    svgstrings = svgBegin w h ++ svgfigs ++ svgEnd in writeFile "output.svg" svgstrings
     
 
+
+
+
+
+
+
+  
