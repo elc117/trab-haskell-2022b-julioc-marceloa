@@ -1,15 +1,8 @@
-O repositório de entrega deverá conter:
+#!/bin/bash
 
-os códigos desenvolvidos
+if [[ "$#" == 0 ]]; then
+    exec ghci
+fi
 
-um arquivo README.md dividido em seções, contendo
-
-identificação da dupla
-
-exemplos de imagens de saída
-
-explicação sobre como executar o programa
-
-análise comparativa dos códigos
-
-créditos para sites/pessoas que ajudaram
+# This is needed to run the `main` function by default.
+{ echo main ; cat - ; } | exec ghci "$@"

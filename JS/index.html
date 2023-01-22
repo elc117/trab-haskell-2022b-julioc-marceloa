@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T2 - Paradigmas de Programaçao</title>
+    <link rel= "stylesheet" href="css/main.css">
+  </head>
+
+  <svg class="circle" width="400" height="400" viewbox= "0 0 400 400">
+
+    <script>
+      var desenho = document.querySelector('.desenho');
+      var svgNS = 'http://www.w3.org/2000/svg';
+      var myCircle = document.createElementNS(svgNS, "circle");
+
+      function createCircle() {
+        myCircle.setAttributeNS(null, "r", 5);
+        myCircle.setAttributeNS(null, "cx", 50);
+        myCircle.setAttributeNS(null, "cy", 50);
+        myCircle.setAttributeNS(null, "fill", "white");
+        myCircle.setAttributeNS(null, "stroke", "silver");
+        myCircle.setAttributeNS(null, "stroke-width", 3);
+        desenho.appendChild(myCircle);
+      }
+     
+
+    </script>
+</html>
