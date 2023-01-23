@@ -7,7 +7,7 @@ Com este trabalho será apresentado a geração de imagens vetoriais em formato 
 
 ## Exemplos de imagens de saída
 A imagem base utilizada será o logo da montadora de automóveis Audi. Abaixo está a logomarca utilizada:
-![AL090142_medium](https://user-images.githubusercontent.com/42869269/214034178-361773c6-3556-41d9-8b54-b61e045ca036.jpg)
+![AL090142_small](https://user-images.githubusercontent.com/42869269/214034282-010f4cb2-e459-4bf8-a277-00738618cf5f.jpg)
 
 exemplos de imagens de saída
 
