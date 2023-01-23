@@ -1,3 +1,8 @@
+# Trabalho de Programação funcional
+## Alunos: Marcelo Azevedo e Júlio Cesar
+
+
+
 O repositório de entrega deverá conter:
 
 os códigos desenvolvidos
