@@ -5,15 +5,13 @@
 Com este trabalho será apresentado a geração de imagens vetoriais em formato SVG (Scalable Vector Graphics). 
 > Linguagens utilizadas: Haskell e JavaScript
 
-O repositório de entrega deverá conter:
-
-os códigos desenvolvidos
-
-um arquivo README.md dividido em seções, contendo
-
-identificação da dupla
+## Exemplos de imagens de saída
+A imagem base utilizada será o logo da montadora de automóveis Audi. Abaixo está a logomarca utilizada:
+![audi-logo](https://user-images.githubusercontent.com/42869269/214033594-15da5757-e376-4deb-8620-de14e555151e.jpg)
 
 exemplos de imagens de saída
+
+os códigos desenvolvidos
 
 explicação sobre como executar o programa
 
