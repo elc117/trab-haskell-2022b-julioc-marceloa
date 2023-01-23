@@ -11,8 +11,8 @@ maxRGB = 255
 type Circ = (Int, Int, Int)
 
 -- Strings SVG
-svgCirc :: Circ -> String -> String
-svgCirc (cx, cy, r) style =
+svgCirc :: Circ -> String -> String 
+svgCirc (cx,cy,r) style  =
   printf "<circle cx='%d' cy='%d' r='%d' style='s'/>" cx cy r style
 
 
@@ -24,19 +24,16 @@ svgStyle (r, g , b) = printf "fill:rgb(%d,%d,%d);stroke-width:3;stroke:rgb(%d,%d
 -- svgBegin :: Float -> Float -> String
 svgBegin :: Int -> Int -> String
 svgBegin w h =
+  --printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h
   printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h
 
 -- String final SVG
 svgEnd :: String
 svgEnd = "</svg>"
 
--- A função cycle gera uma lista infinita -- procure saber mais sobre ela :-)
-rgbOnlyPalette :: Int -> [(Int,Int,Int)]
-rgbOnlyPalette n = take n $ cycle [(maxRGB,0,0), (0,maxRGB,0), (0,0,maxRGB)]
-
-genRandomRects :: StdGen -> Int -> Int -> Int -> [Circ]
-genRandomRects gen n size gap =
-  let grid = genRectGrid n size gap
-      randombools = genRandomBools gen (n*n)
-   in map (\(b,r) -> r) $ filter (\(b,r) -> b) $ zip randombools grid
-   
+main :: IO ()
+main = do 
+    let
+      w = 400
+      h = 400
+      svgstrings = svgBegin w h ++ svgCirc ++ svgEnd in writeFile "output.svg" svgstrings
