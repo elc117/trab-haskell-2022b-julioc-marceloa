@@ -1,7 +1,9 @@
 # Trabalho de Programação funcional
 ## Alunos: Marcelo Azevedo e Júlio Cesar
 
-
+##Introdução
+Com este trabalho será apresentado a geração de imagens vetoriais em formato SVG (Scalable Vector Graphics). 
+> Linguagens utilizadas: Haskell e JavaScript
 
 O repositório de entrega deverá conter:
 
