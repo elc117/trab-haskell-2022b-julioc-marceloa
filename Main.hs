@@ -22,9 +22,7 @@ svgStyle (r, g , b) = printf "fill:rgb(%d,%d,%d);stroke-width:3;stroke:rgb(%d,%d
 
 -- String inicial SVG
 svgBegin :: Int -> Int -> String
-svgBegin w h =
-  --printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h
-  printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h
+svgBegin w h = printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h
 
 -- String final SVG
 svgEnd :: String
@@ -32,10 +30,8 @@ svgEnd = "</svg>"
 
 main :: IO ()
 main = do 
-  color_randgen <- newStdGen
-  pos_randgen <- newStdGen
   putStrLn "Check output in output.svg"
   let 
     w = 400
     h = 400
-    svgstrings = svgBegin w h ++ svgCirc ++ svgEnd in writeFile "output.svg" svgstrings
+    svgstrings = svgBegin w h ++ svgCirc  ++ svgEnd in writeFile "output.svg" svgstrings

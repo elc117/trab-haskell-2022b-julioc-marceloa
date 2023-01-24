@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circulo{
+    height: 150px;
+    width: 480px;
+    position: relative;
+}
+.inner-1,.inner-2,.inner-3,.inner-4{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 10px solid #232323
+    border-raidus: 100%;
+    box-shadow:1px 1px 20px #232323
+   
+}

@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>T2 - Paradigmas de Programaçao</title>
-    <link rel= "stylesheet" href="css/main.css">
-  </head>
-
-  <svg class="circle" width="400" height="400" viewbox= "0 0 400 400">
-
-    <script>
-      var desenho = document.querySelector('.desenho');
-      var svgNS = 'http://www.w3.org/2000/svg';
-      var myCircle = document.createElementNS(svgNS, "circle");
-
-      function createCircle() {
-        myCircle.setAttributeNS(null, "r", 5);
-        myCircle.setAttributeNS(null, "cx", 50);
-        myCircle.setAttributeNS(null, "cy", 50);
-        myCircle.setAttributeNS(null, "fill", "white");
-        myCircle.setAttributeNS(null, "stroke", "silver");
-        myCircle.setAttributeNS(null, "stroke-width", 3);
-        desenho.appendChild(myCircle);
-      }
-     
-
-    </script>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http=equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigmas</tittle>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <section class="container">
+        <div class="circulo">
+        <div class="inner-1"></div>
+        <div class="inner-2"></div>
+        <div class="inner-3"></div>
+        <div class="inner-4"></div>
+    </section>
+</body>
 </html>
