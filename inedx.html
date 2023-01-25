@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 2 Paradigmas</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    
+    <svg class="desenho" width="500" heigth="500" viewBox="0 0 500 500">
+    </svg>
+
+    <script>
+    var desenho = document.querySelector('.desenho');
+    var svgNS = 'http://www.w3.org/2000/svg';
+
+    var myCircle =  document.createElementNS(svgNS, "circle");
+    myCircle.setAttributeNS(null, "r", "30");
+    myCircle.setAttributeNS(null, "cx", "100");
+    myCircle.setAttributeNS(null, "cy", "100");
+    myCircle.setAttributeNS(null, "stroke", "black");
+    myCircle.setAttributeNS(null, "fill", "white");
+
+
+    desenho.appendChild(myCircle);
+
+    </script>
+</body>
+</html>
