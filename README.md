@@ -13,7 +13,9 @@ Fonte: Google Imagens
 
 Com o uso do SVG, pretende-se gerar imagens vetoriais tendo como figura base os círculos da logo e, posteoriormente aplicar funções para criar cores aleatórios nos mesmos, como no exemplo abaixo:
 
-![Captura de tela_20230125_095433](https://user-images.githubusercontent.com/42869269/214568777-48d6ae19-5ad3-4eeb-a862-2e05f0fcb287.png)
+![Captura de tela_20230126_203043](https://user-images.githubusercontent.com/42869269/214973790-d073886c-00db-4bca-89a0-175c6e5bbbea.png)
+
+
 
 Fonte: Imagem gerada no W3Schools
 
