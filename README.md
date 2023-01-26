@@ -34,7 +34,14 @@ Como executar o programa em Haskell
     https://replit.com/@Marcelo-Da-Silv/trab-haskell-2022b-julioc-marceloa#Main.hs
 2. Selecione **Shell**
 3. Digite **ghci Main.hs**
-4. 
+4. Tecle **ENTER**
+5. Digite **main**
+
+A saída será a seguinte:
+
+![Captura de tela_20230126_205324](https://user-images.githubusercontent.com/42869269/214976415-5af26043-3426-4a2e-867f-e9c3fd4cc288.png)
+
+Clique no arquivo **ouput.svg**
 
 
 ## Análise comparativa dos códigos
