@@ -17,7 +17,14 @@ Com o uso do SVG, pretende-se gerar imagens vetoriais tendo como figura base os 
 
 
 
-Fonte: Imagem SVG criada no JavaScript
+Fonte: Imagem SVG gerada no JavaScript
+
+
+![Captura de tela_20230126_204043](https://user-images.githubusercontent.com/42869269/214974922-91892ddf-a440-4b29-b981-dcace8d10f59.png)
+
+
+Fonte: Imagem SVG gerada no Haskell
+
 
 ## Códigos desenvolvidos
 os códigos desenvolvidos
