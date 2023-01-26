@@ -1,0 +1,6 @@
+<svg width='500.0' height='500.0' xmlns='http://www.w3.org/2000/svg'>
+<circle cx='100' cy='100' r='50' fill='rgb(5, 100, 30, 0.4)' />
+<circle cx='150' cy='100' r='50' fill='rgb(10, 150, 30, 0.4)' />
+<circle cx='200' cy='100' r='50' fill='rgb(50,100,200, 0.4)' />
+<circle cx='250' cy='100' r='50' fill='rgb(250,100,300, 0.4)' />
+</svg>

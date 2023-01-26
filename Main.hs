@@ -6,32 +6,37 @@ import System.Random -- pesquisar funcionamento
 -- Define o valor máximo de cores
 maxRGB :: Int
 maxRGB = 255
-
--- cx, cy, r
+-- r, cx, cy
 type Circ = (Int, Int, Int)
 
 -- Strings SVG
-svgCirc :: Circ -> String -> String 
-svgCirc (cx,cy,r) style  =
-  printf "<circle cx='%d' cy='%d' r='%d' style='s'/>" cx cy r style
-
+svgCircle :: Int -> Int -> Int -> String -> String 
+svgCircle x y r style = 
+  printf "<circle cx='%d' cy='%d' r='%d' fill='%s' />\n" x y r style
+ 
 
 --Atributos de estilo 
-svgStyle :: (String, Int, String) -> String --stroke="black" stroke-width="3" fill="red"
+svgStyle :: (Int, Int, Int) -> String 
 svgStyle (r, g , b) = printf "fill:rgb(%d,%d,%d);stroke-width:3;stroke:rgb(%d,%d,%d)" r g b
 
 -- String inicial SVG
-svgBegin :: Int -> Int -> String
-svgBegin w h = printf "<svg width='%d' height='%d' xmlns='http://www.w3.org/2000/svg'>\n" w h
+svgBegin :: Float -> Float -> String
+svgBegin w h = printf "<svg width='%f' height='%f' xmlns='http://www.w3.org/2000/svg'>\n" w h
 
 -- String final SVG
 svgEnd :: String
 svgEnd = "</svg>"
 
+svgAll :: String
+svgAll = svgBegin 500 500 ++ 
+  svgCircle 100 100 50 "rgb(5, 100, 30, 0.4)" ++
+  svgCircle 150 100 50  "rgb(10, 150, 30, 0.4)" ++
+  svgCircle 200 100 50  "rgb(50,100,200, 0.4)" ++
+  svgCircle 250 100 50  "rgb(250,100,300, 0.4)" ++
+  svgEnd
+
 main :: IO ()
 main = do 
-  putStrLn "Check output in output.svg"
-  let 
-    w = 400
-    h = 400
-    svgstrings = svgBegin w h ++ svgCirc  ++ svgEnd in writeFile "output.svg" svgstrings
+putStrLn "Check output in output.svg"
+writeFile "output.svg" svgAll
+
