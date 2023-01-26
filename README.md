@@ -32,6 +32,9 @@ os códigos desenvolvidos
 Como executar o programa em Haskell
 1. Acesse o Replit 
     https://replit.com/@Marcelo-Da-Silv/trab-haskell-2022b-julioc-marceloa#Main.hs
+2. Selecione \*Shell\*
+3. Digite \* ghci Main.hs\*
+4. 
 
 
 ## Análise comparativa dos códigos
