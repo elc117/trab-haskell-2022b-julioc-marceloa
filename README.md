@@ -29,8 +29,10 @@ Fonte: Imagem SVG gerada no Haskell
 ## Códigos desenvolvidos
 os códigos desenvolvidos
 
-##Como executar o programa
-explicação sobre como executar o programa
+Como executar o programa em Haskell
+1. Acesse o Replit 
+    https://replit.com/@Marcelo-Da-Silv/trab-haskell-2022b-julioc-marceloa#Main.hs
+
 
 ## Análise comparativa dos códigos
 análise comparativa dos códigos
