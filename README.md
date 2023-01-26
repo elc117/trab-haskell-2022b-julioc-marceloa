@@ -17,7 +17,7 @@ Com o uso do SVG, pretende-se gerar imagens vetoriais tendo como figura base os 
 
 
 
-Fonte: Imagem gerada no W3Schools
+Fonte: Imagem SVG criada no JavaScript
 
 ## Códigos desenvolvidos
 os códigos desenvolvidos
