@@ -26,10 +26,7 @@ Fonte: Imagem SVG gerada no JavaScript
 Fonte: Imagem SVG gerada no Haskell
 
 
-## Códigos desenvolvidos
-os códigos desenvolvidos
-
-#Como executar o programa em Haskell
+## Como executar o programa em Haskell
 1. Acesse o Replit 
     https://replit.com/@Marcelo-Da-Silv/trab-haskell-2022b-julioc-marceloa#Main.hs
 2. Selecione **Shell**
@@ -43,7 +40,7 @@ A saída será a seguinte:
 
 Clique no arquivo **ouput.svg**
 
-# Como executar o programa em JavaScript
+## Como executar o programa em JavaScript
 
 ## Análise comparativa dos códigos
 análise comparativa dos códigos
