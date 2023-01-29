@@ -1,0 +1,147 @@
+# Trabalho de Programação funcional
+## Alunos: Marcelo Azevedo e Júlio Cesar
+
+## Introdução
+Com este trabalho será apresentado a geração de imagens vetoriais em formato SVG (Scalable Vector Graphics). 
+> Linguagens utilizadas: **Haskell e JavaScript**
+
+## Exemplos de imagens de saída
+A imagem base utilizada será o logo da montadora de automóveis Audi. Abaixo está o exemlo da logomarca original: 
+![AL090142_small](https://user-images.githubusercontent.com/42869269/214034282-010f4cb2-e459-4bf8-a277-00738618cf5f.jpg)
+
+Fonte: Google Imagens
+
+Com o uso do SVG, pretende-se gerar imagens vetoriais tendo como figura base os círculos da logo e, posteoriormente aplicar funções para criar cores aleatórias nos mesmos, como no exemplo abaixo:
+
+![Captura de tela_20230128_190730](Captura%20de%20tela_20230128_190730.png)
+Fonte: Imagem SVG gerada em JavaScript
+
+![Captura de tela_20230128_191019](Captura%20de%20tela_20230128_191020.png)
+
+Fonte: Imagem SVG gerada em Haskell
+
+**OBS: O formato do desenho original foi alterado para melhor visualização da mudança de cores.**
+
+
+## Como executar o programa em Haskell
+1. Acesse o Replit 
+    https://replit.com/@Marcelo-Da-Silv/trab-haskell-2022b-julioc-marceloa#Main.hs
+2. No canto inferior esquerdo selecione **Shell**
+3. Digite o comando **ghci Main.hs**
+4. Tecle **ENTER**
+5. Após a compilação, digite **main**
+
+A saída será a seguinte:
+
+![Captura de tela_20230126_205324](https://user-images.githubusercontent.com/42869269/214976415-5af26043-3426-4a2e-867f-e9c3fd4cc288.png)
+
+Posteriormente, a imagem SVG estará no arquivo **ouput.svg**, como no exemplo abaixo:
+
+![Captura de tela_20230128_194230](Captura%20de%20tela_20230128_194230.png)
+
+## Como executar o programa em JavaScript
+1. Acesse o Replit
+https://replit.com/@JulioCesar377/trab-JS-2022b-julioc-marcelo#index.html
+2. Uma aba no browser irá aparecer
+   ![Captura de tela_20230128_191912](Captura%20de%20tela_20230128_191912.png)
+3. Na parte superior direita clique em **RUN** (ou em **Open website**)
+4. Ao executar o código, uma janela no lado direito aparecerá e será possível visualizar o desenho em SVG
+  ![Captura de tela_20230128_192624](Captura%20de%20tela_20230128_192624.png)
+6. Ao clicar em um dos círculos, sua cor irá alterar-se.
+![Captura de tela_20230128_194511](Captura%20de%20tela_20230128_194511.png)
+**OBS: Nos testes realizados, não recomendados o uso do browser Microsoft Edge**
+
+   
+## Análise comparativa dos códigos
+> Haskell vs Javascript
+
+Apresentando os competidores:
+
+>**Haskell** é uma linguagem de programação funcional, compilada e estaticamente tipada. Ele é usado principalmente para desenvolvimento de aplicações de baixo nível, como sistemas operacionais e compiladores, além de ser usado para aplicações de inteligência artificial e aprendizado de máquina.
+
+
+>**JavaScript** é uma linguagem de programação interpretada, dinâmica e orientada a objetos. Ele é amplamente usado na web para desenvolvimento de aplicações front-end e back-end. Ele é uma linguagem de alto nível e fácil de aprender, o que o torna popular entre os desenvolvedores web.
+
+Antes de continuar, abaixo estão algumas informações importantes:
+>**JavaScript** é uma das linguagens de programação mais populares do mundo e é amplamente utilizada em desenvolvimento web. De acordo com uma pesquisa realizada pela Stack Overflow em 2020, JavaScript foi a linguagem de programação mais popular entre os desenvolvedores, com **69,7%** dos entrevistados afirmando usá-lo.
+
+>**Haskell**, por outro lado, é uma linguagem de programação funcional mais especializada e menos utilizada. A pesquisa da Stack Overflow mostrou que apenas **2,3%** dos desenvolvedores afirmaram usar Haskell. Isso significa que Haskell é menos utilizado do que JavaScript, e é mais comumente usado por desenvolvedores que trabalham com aplicativos financeiros, ciência de dados e desenvolvimento de sistemas.
+
+Abaixo está o código completo em Haskell:
+![Captura de tela_20230128_195745](Captura%20de%20tela_20230128_195745.png)
+
+Abaixo está o código completo em JavaScript:
+
+
+![Captura de tela_20230128_200044](Captura%20de%20tela_20230128_200044.png)
+
+Notamos que a primeira vista o código em Haskell parece ter uma forma abstrata na geração das suas funções, fato que pode gerar certeza estranheza. Por ser considerada uma linguagem de programação de alto desempenho e tecnicamente avançada a escolha entre as duas dependerá do tipo de projeto e dos objetivos do desenvolvedor.
+
+Na disciplina de Paradigmas de Programação ministrada pela profª Andrea Schwertner Charão, tivemos o primeiro contato com a linguagem de programação funcional **Haskell**, como sintaxe e uso de funções... então vamos apresentar como é realizada a geração dos círculos em ambas as linguagens:
+
+### Geração do arquivo SVG ###
+> Haskell
+> 
+
+
+![Captura de tela_20230128_204844](Captura%20de%20tela_20230128_204844.png)
+
+Fonte: Trecho do código em Haskell
+
+A saída da função **svgBegin** em Haskell será um tipo **String** que representa o início de um arquivo SVG. Os dois parâmetros **'w' e 'h'** representam a largura e altura do SVG, respectivamente. A função **show** é utilizada para converter os valores dos parâmetros para strings e os concatena com as outras strings. Dessa forma gera-se a string 
+
+> JavaScript
+![Captura de tela_20230128_205749](Captura%20de%20tela_20230128_205749.png)
+Fonte: Trecho do código em JavaScript
+
+A tag **svg** cria um elemento SVG com as dimensões de largura e altura com valor **500**, respectivamente e atribui a classe **desenho** ao mesmo.
+
+### Geração do círculo
+> Haskell
+> ![Captura de tela_20230128_212031](Captura%20de%20tela_20230128_212031.png)
+Fonte: Trecho do código em Haskell
+
+A função **svgCircle** recebe quatro parâmetros **x, y, r,  style** representando respectivamente as coordenadas **x, y, centro, raio e estilo (cor)**, retornado uma string que representa um círculo em SVG.
+
+> JavaScript
+> ![Captura de tela_20230128_211852](Captura%20de%20tela_20230128_211852.png)
+Fonte: Trecho do código em JavaScript
+
+A função **circle** cria um elemento círculo SVG e define os valores de **r, cx , cy, stroke, fill**, respectivamente, **raio, coordenadado x, coordenada y, definição de cor e preenchimento**. Após isso, ele adiciona o elemento criado selecionado com a classe **desenho** e retorna o elemento criado.
+
+### Cores RGB aleatórias
+>Haskell
+>![Captura de tela_20230128_212154](Captura%20de%20tela_20230128_212154.png)
+>Fonte: Tracho do código em Haskell
+
+A função **randomRGB** utiliza a biblioteca **random** para gerar valores unitários aleatórios para **R, G, B** entre **0 e 255**. Em seguida, retorna uma string com os valores gerados.
+
+> JavaScript
+> ![Captura de tela_20230128_212813](Captura%20de%20tela_20230128_212813.png)
+> Fonte: Trecho do código em JavaScript
+
+A função **randomColor()** gera um valor aleatório no formato hexadecimal, que será utilizada na geração das cores. A função **querySelectorAll** faz uso de todos os elementos **circle** presentes na página HTML. Utilizamos o atributo **forEach** para adicionar um evento "click" para cada círculo, onde a cor de preenchimento e borda serão atualizados para uma cor aleatória gerada por **randomColor()** ao clicá-los.
+
+### Enfim, a geração da imagem SVG
+> Haskell
+>![Captura de tela_20230128_213435](Captura%20de%20tela_20230128_213435.png)
+Fonte: Trecho do código em Haskell
+
+A função **svgAll** cria as cores aleatórias dos círculos de forma aleatória por meio da função **randomRGB**, atribuindo valores para as variáveis **color1, color2, color3, color4**. Posteriormente, utiliza-se outras criadas anteriormente, como **svgBegin, svgCircle e svgEnd** para criar os círculos com as coordenadas e tamanhos específicos. A função **main** imprime uma mensagem informando onde o arquivo SVG será salvo e chama a função **svgAll** para criar e salvar o arquivo.
+
+>JavaScript
+> ![Captura de tela_20230128_230204](Captura%20de%20tela_20230128_230204.png)
+Fonte: Trecho do código em JavaScript
+
+A variável **varios** contém uma lista de objetos no formato JSON representando círculo posicionados em eixos de coordenadas x distintos, bem como as cores. O mesmo será passado como parâmetro para a função **circle**, que irá criar e desenhar círculos com as especificações fornecidas.
+
+![Captura de tela_20230128_230747](Captura%20de%20tela_20230128_230747.png)
+Fonte: Trecho do código em JavaScript
+
+A variável **circles** está selecionando todos os elementos do tipo **circle** e atribuindo o evento "click". Quando o usuário clicar em um dos círculos, a função **randomColor()** é chamada para gerar uma cor aleatória de **stroke e fill** do círculo clicado. Posteriormente, cria-se uma cópia em texto do SVG e convertida em um objeto **Blob (elemento binário)** com o tipo **image/svg+xml;charset=utf-8**. Por fim, uma URL é gerada para esse objeto.
+
+
+## Créditos 
+Agradecemos ao site www.w3schools.com/graphics/ por nos guiar com tutorias de SVG e Haskell;
+
+Também, a profª Andrea Schwertner Charão por apresentar-nos ao fascinamente mundo dos Paradigmas de Programação.
