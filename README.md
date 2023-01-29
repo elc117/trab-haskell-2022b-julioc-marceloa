@@ -165,6 +165,7 @@ A forma de criação escolhida em Haskell foi a criação de um arquivo **output
 Isto posto, este trabalho agiu de maneira agregadora à nosso conhecimento em linguagens de programação imperativa e funcional.
 
 ## Créditos 
-Agradecemos ao site www.w3schools.com/graphics/ por nos guiar com tutorias de SVG e Haskell;
+Agradecemos ao site www.w3schools.com/graphics/ por nos guiar com tutorias de SVG;
+Da mesma forma, o site www.haskell.org/;
 
 Também, a profª Andrea Schwertner Charão por apresentar-nos ao fascinamente mundo dos Paradigmas de Programação.
