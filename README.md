@@ -4,6 +4,7 @@
 ## Introdução
 Com este trabalho será apresentado a geração de imagens vetoriais em formato SVG (Scalable Vector Graphics). 
 > Linguagens utilizadas: **Haskell e JavaScript**
+> Link do trabalho no Replit: https://replit.com/@Marcelo-Da-Silv/trab-haskell-2022b-julioc-marceloa
 
 ## Exemplos de imagens de saída
 A imagem base utilizada será o logo da montadora de automóveis Audi. Abaixo está o exemlo da logomarca original: 
