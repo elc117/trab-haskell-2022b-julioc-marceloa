@@ -99,44 +99,57 @@ A tag **svg** cria um elemento SVG com as dimensões de largura e altura com val
 
 ### Geração do círculo
 > Haskell
-> ![Captura de tela_20230128_212031](Captura%20de%20tela_20230128_212031.png)
+![HS 7](https://user-images.githubusercontent.com/42869269/215344587-88c1a509-ccf4-4465-bf66-cf895f8e2f97.png)
 Fonte: Trecho do código em Haskell
 
 A função **svgCircle** recebe quatro parâmetros **x, y, r,  style** representando respectivamente as coordenadas **x, y, centro, raio e estilo (cor)**, retornado uma string que representa um círculo em SVG.
 
 > JavaScript
-> ![Captura de tela_20230128_211852](Captura%20de%20tela_20230128_211852.png)
+
+![JS 7](https://user-images.githubusercontent.com/42869269/215344642-cdb6d3d3-e19c-45e4-a5c5-0424691c5f71.png)
+
+
 Fonte: Trecho do código em JavaScript
 
 A função **circle** cria um elemento círculo SVG e define os valores de **r, cx , cy, stroke, fill**, respectivamente, **raio, coordenadado x, coordenada y, definição de cor e preenchimento**. Após isso, ele adiciona o elemento criado selecionado com a classe **desenho** e retorna o elemento criado.
 
 ### Cores RGB aleatórias
 >Haskell
->![Captura de tela_20230128_212154](Captura%20de%20tela_20230128_212154.png)
+
+![HS 8](https://user-images.githubusercontent.com/42869269/215344790-7d18cb7b-0df4-43d2-bd55-8cee231e5286.png)
 >Fonte: Tracho do código em Haskell
 
 A função **randomRGB** utiliza a biblioteca **random** para gerar valores unitários aleatórios para **R, G, B** entre **0 e 255**. Em seguida, retorna uma string com os valores gerados.
 
 > JavaScript
-> ![Captura de tela_20230128_212813](Captura%20de%20tela_20230128_212813.png)
+> 
+![JS 8](https://user-images.githubusercontent.com/42869269/215344831-c30c9563-b288-416c-9e26-da84de03dd8d.png)
+
+> 
 > Fonte: Trecho do código em JavaScript
 
 A função **randomColor()** gera um valor aleatório no formato hexadecimal, que será utilizada na geração das cores. A função **querySelectorAll** faz uso de todos os elementos **circle** presentes na página HTML. Utilizamos o atributo **forEach** para adicionar um evento "click" para cada círculo, onde a cor de preenchimento e borda serão atualizados para uma cor aleatória gerada por **randomColor()** ao clicá-los.
 
 ### Enfim, a geração da imagem SVG
-> Haskell
->![Captura de tela_20230128_213435](Captura%20de%20tela_20230128_213435.png)
+>Haskell
+
+>![HS 9](https://user-images.githubusercontent.com/42869269/215344935-fc29f4a5-aaec-431c-b2fe-4d8b20b79ae9.png)
+
 Fonte: Trecho do código em Haskell
 
 A função **svgAll** cria as cores aleatórias dos círculos de forma aleatória por meio da função **randomRGB**, atribuindo valores para as variáveis **color1, color2, color3, color4**. Posteriormente, utiliza-se outras criadas anteriormente, como **svgBegin, svgCircle e svgEnd** para criar os círculos com as coordenadas e tamanhos específicos. A função **main** imprime uma mensagem informando onde o arquivo SVG será salvo e chama a função **svgAll** para criar e salvar o arquivo.
 
 >JavaScript
-> ![Captura de tela_20230128_230204](Captura%20de%20tela_20230128_230204.png)
+
+![JS 9](https://user-images.githubusercontent.com/42869269/215344987-c9a0c34c-bae0-476f-b013-ccc47f87303a.png)
+
+
 Fonte: Trecho do código em JavaScript
 
 A variável **varios** contém uma lista de objetos no formato JSON representando círculo posicionados em eixos de coordenadas x distintos, bem como as cores. O mesmo será passado como parâmetro para a função **circle**, que irá criar e desenhar círculos com as especificações fornecidas.
 
-![Captura de tela_20230128_230747](Captura%20de%20tela_20230128_230747.png)
+![JS 10](https://user-images.githubusercontent.com/42869269/215345041-2d8c8113-c444-42bc-999f-d63b40518ce7.png)
+
 Fonte: Trecho do código em JavaScript
 
 A variável **circles** está selecionando todos os elementos do tipo **circle** e atribuindo o evento "click". Quando o usuário clicar em um dos círculos, a função **randomColor()** é chamada para gerar uma cor aleatória de **stroke e fill** do círculo clicado. Posteriormente, cria-se uma cópia em texto do SVG e convertida em um objeto **Blob (elemento binário)** com o tipo **image/svg+xml;charset=utf-8**. Por fim, uma URL é gerada para esse objeto.
