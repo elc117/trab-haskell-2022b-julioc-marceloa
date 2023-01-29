@@ -81,10 +81,8 @@ Na disciplina de Paradigmas de Programação ministrada pela profª Andrea Schwe
 
 ### Geração do arquivo SVG ###
 > Haskell
-> 
 
 ![HS6](https://user-images.githubusercontent.com/42869269/215340625-8121eee7-02ae-479d-a989-080438069928.png)
-
 
 Fonte: Trecho do código em Haskell
 
