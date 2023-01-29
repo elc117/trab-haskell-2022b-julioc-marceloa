@@ -1,4 +1,4 @@
-# Trabalho de Programação funcional
+# Trabalho de Programação Funcional
 ## Alunos: Marcelo Azevedo e Júlio Cesar
 
 ## Introdução
