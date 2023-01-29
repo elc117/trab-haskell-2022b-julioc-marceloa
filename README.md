@@ -85,7 +85,7 @@ Na disciplina de Paradigmas de Programação ministrada pela profª Andrea Schwe
 ### Geração do arquivo SVG ###
 > Haskell
 
-![HS6](https://user-images.githubusercontent.com/42869269/215340625-8121eee7-02ae-479d-a989-080438069928.png)
+>![HS6](https://user-images.githubusercontent.com/42869269/215340625-8121eee7-02ae-479d-a989-080438069928.png)
 
 Fonte: Trecho do código em Haskell
 
@@ -93,22 +93,24 @@ A saída da função **svgBegin** em Haskell será um tipo **String** que repres
 
 > JavaScript
 
-![JS7](https://user-images.githubusercontent.com/42869269/215340806-4110cf15-75da-4759-bdfe-27cb7867bc9c.png)
+>![JS7](https://user-images.githubusercontent.com/42869269/215340806-4110cf15-75da-4759-bdfe-27cb7867bc9c.png)
 
 Fonte: Trecho do código em JavaScript
 
 A tag **svg** cria um elemento SVG com as dimensões de largura e altura com valor **500**, respectivamente e atribui a classe **desenho** ao mesmo.
 
 ### Geração do círculo
+
 > Haskell
-![HS 7](https://user-images.githubusercontent.com/42869269/215344587-88c1a509-ccf4-4465-bf66-cf895f8e2f97.png)
+
+>![HS 7](https://user-images.githubusercontent.com/42869269/215344587-88c1a509-ccf4-4465-bf66-cf895f8e2f97.png)
 Fonte: Trecho do código em Haskell
 
 A função **svgCircle** recebe quatro parâmetros **x, y, r,  style** representando respectivamente as coordenadas **x, y, centro, raio e estilo (cor)**, retornado uma string que representa um círculo em SVG.
 
 > JavaScript
 
-![JS 7](https://user-images.githubusercontent.com/42869269/215344642-cdb6d3d3-e19c-45e4-a5c5-0424691c5f71.png)
+>![JS 7](https://user-images.githubusercontent.com/42869269/215344642-cdb6d3d3-e19c-45e4-a5c5-0424691c5f71.png)
 
 
 Fonte: Trecho do código em JavaScript
