@@ -13,10 +13,11 @@ Fonte: Google Imagens
 
 Com o uso do SVG, pretende-se gerar imagens vetoriais tendo como figura base os círculos da logo e, posteoriormente aplicar funções para criar cores aleatórias nos mesmos, como no exemplo abaixo:
 
+![JS1](https://user-images.githubusercontent.com/42869269/215340269-7208f907-9197-434d-869d-c6cdd3b1bd39.png)
 
 Fonte: Imagem SVG gerada em JavaScript
 
-![Captura de tela_20230128_191019](Captura%20de%20tela_20230128_191020.png)
+![HS1](https://user-images.githubusercontent.com/42869269/215340287-88ee58a4-68bf-4166-9493-5048837844f7.png)
 
 Fonte: Imagem SVG gerada em Haskell
 
@@ -33,22 +34,22 @@ Fonte: Imagem SVG gerada em Haskell
 
 A saída será a seguinte:
 
-![Captura de tela_20230126_205324](https://user-images.githubusercontent.com/42869269/214976415-5af26043-3426-4a2e-867f-e9c3fd4cc288.png)
+![HS3](https://user-images.githubusercontent.com/42869269/215340358-ec357326-2452-47dd-a11a-6712ea763717.png)
 
 Posteriormente, a imagem SVG estará no arquivo **ouput.svg**, como no exemplo abaixo:
-
-![Captura de tela_20230128_194230](Captura%20de%20tela_20230128_194230.png)
+![HS2](https://user-images.githubusercontent.com/42869269/215340343-10b0a230-01b1-438e-9f9a-48c241e8c003.png)
 
 ## Como executar o programa em JavaScript
 1. Acesse o Replit
 https://replit.com/@JulioCesar377/trab-JS-2022b-julioc-marcelo#index.html
 2. Uma aba no browser irá aparecer
-   ![Captura de tela_20230128_191912](Captura%20de%20tela_20230128_191912.png)
+![JS3](https://user-images.githubusercontent.com/42869269/215340408-313c7973-504e-4592-88f4-5cd416cd390e.png)
 3. Na parte superior direita clique em **RUN** (ou em **Open website**)
 4. Ao executar o código, uma janela no lado direito aparecerá e será possível visualizar o desenho em SVG
-  ![Captura de tela_20230128_192624](Captura%20de%20tela_20230128_192624.png)
+![JS4](https://user-images.githubusercontent.com/42869269/215340442-86685f51-c946-4bcc-9194-699e6a6f8e6d.png)
 6. Ao clicar em um dos círculos, sua cor irá alterar-se.
-![Captura de tela_20230128_194511](Captura%20de%20tela_20230128_194511.png)
+![JS5](https://user-images.githubusercontent.com/42869269/215340464-413e82a6-f313-4113-a681-b90428ad43db.png)
+
 **OBS: Nos testes realizados, não recomendados o uso do browser Microsoft Edge**
 
    
@@ -68,12 +69,10 @@ Antes de continuar, abaixo estão algumas informações importantes:
 >**Haskell**, por outro lado, é uma linguagem de programação funcional mais especializada e menos utilizada. A pesquisa da Stack Overflow mostrou que apenas **2,3%** dos desenvolvedores afirmaram usar Haskell. Isso significa que Haskell é menos utilizado do que JavaScript, e é mais comumente usado por desenvolvedores que trabalham com aplicativos financeiros, ciência de dados e desenvolvimento de sistemas.
 
 Abaixo está o código completo em Haskell:
-![Captura de tela_20230128_195745](Captura%20de%20tela_20230128_195745.png)
+![HS5](https://user-images.githubusercontent.com/42869269/215340527-22256276-cbe3-455b-b912-9c5e669626b7.png)
 
 Abaixo está o código completo em JavaScript:
-
-
-![Captura de tela_20230128_200044](Captura%20de%20tela_20230128_200044.png)
+![JS6](https://user-images.githubusercontent.com/42869269/215340570-cd60b715-fdbd-49ee-b511-517e4249252b.png)
 
 Notamos que a primeira vista o código em Haskell parece ter uma forma abstrata na geração das suas funções, fato que pode gerar certeza estranheza. Por ser considerada uma linguagem de programação de alto desempenho e tecnicamente avançada a escolha entre as duas dependerá do tipo de projeto e dos objetivos do desenvolvedor.
 
@@ -83,15 +82,17 @@ Na disciplina de Paradigmas de Programação ministrada pela profª Andrea Schwe
 > Haskell
 > 
 
+![HS6](https://user-images.githubusercontent.com/42869269/215340625-8121eee7-02ae-479d-a989-080438069928.png)
 
-![Captura de tela_20230128_204844](Captura%20de%20tela_20230128_204844.png)
 
 Fonte: Trecho do código em Haskell
 
 A saída da função **svgBegin** em Haskell será um tipo **String** que representa o início de um arquivo SVG. Os dois parâmetros **'w' e 'h'** representam a largura e altura do SVG, respectivamente. A função **show** é utilizada para converter os valores dos parâmetros para strings e os concatena com as outras strings. Dessa forma gera-se a string 
 
 > JavaScript
-![Captura de tela_20230128_205749](Captura%20de%20tela_20230128_205749.png)
+
+![JS7](https://user-images.githubusercontent.com/42869269/215340806-4110cf15-75da-4759-bdfe-27cb7867bc9c.png)
+
 Fonte: Trecho do código em JavaScript
 
 A tag **svg** cria um elemento SVG com as dimensões de largura e altura com valor **500**, respectivamente e atribui a classe **desenho** ao mesmo.
