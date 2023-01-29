@@ -133,7 +133,7 @@ A função **randomColor()** gera um valor aleatório no formato hexadecimal, qu
 ### Enfim, a geração da imagem SVG
 >Haskell
 
->![HS 9](https://user-images.githubusercontent.com/42869269/215344935-fc29f4a5-aaec-431c-b2fe-4d8b20b79ae9.png)
+![HS 9](https://user-images.githubusercontent.com/42869269/215344935-fc29f4a5-aaec-431c-b2fe-4d8b20b79ae9.png)
 
 Fonte: Trecho do código em Haskell
 
