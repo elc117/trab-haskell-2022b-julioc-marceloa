@@ -34,6 +34,8 @@ Fonte: Imagem SVG gerada em Haskell
 4. Tecle **ENTER**
 5. Após a compilação, digite **main**
 
+**OBS: Se digitar o comando ghci Main.hs aparecer a mensagem que  o comando não está instalado, selecione a opção ihaskell.out. Após sua instalação, digite o comando main e visualize a imagem SVG**
+
 A saída será a seguinte:
 
 ![HS3](https://user-images.githubusercontent.com/42869269/215340358-ec357326-2452-47dd-a11a-6712ea763717.png)
