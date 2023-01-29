@@ -154,6 +154,11 @@ Fonte: Trecho do código em JavaScript
 
 A variável **circles** está selecionando todos os elementos do tipo **circle** e atribuindo o evento "click". Quando o usuário clicar em um dos círculos, a função **randomColor()** é chamada para gerar uma cor aleatória de **stroke e fill** do círculo clicado. Posteriormente, cria-se uma cópia em texto do SVG e convertida em um objeto **Blob (elemento binário)** com o tipo **image/svg+xml;charset=utf-8**. Por fim, uma URL é gerada para esse objeto.
 
+## Conclusão
+
+Após a execução dos códigos em Haskell e JavaScript, podemos observar que ambos são capazes de criar imagens SVG porém, ambos contém suas especificidades para tal feito. 
+A forma de criação escolhida em Haskell foi a criação de um arquivo **output.svg** que, altera-se a cada execução. Em JavaScript, após a execução o usuário fica responsável pela alteração das cores, ao clicar nos círculos de sua preferência.
+Isto posto, este trabalho agiu de maneira agregadora à nosso conhecimento em linguagens de programação imperativa e funcional.
 
 ## Créditos 
 Agradecemos ao site www.w3schools.com/graphics/ por nos guiar com tutorias de SVG e Haskell;
